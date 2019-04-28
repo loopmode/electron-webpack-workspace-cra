@@ -1,0 +1,22 @@
+{
+  "name": "@packages/electron",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "build": "yarn compile && electron-builder",
+    "build:dir": "yarn build --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "electron": "4.0.1",
+    "electron-builder": "20.38.4",
+    "electron-webpack": "^2.6.2",
+    "electron-webpack-eslint": "^4.0.1"
+  }
+}

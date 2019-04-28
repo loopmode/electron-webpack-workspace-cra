@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "electron-webpack-cra-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jovica Aleksic <jovica.aleksic@xailabs.de>",
+  "license": "MIT",
+  "scripts": {
+    "start": "lerna run start --stream",
+    "start:web": "cd packages/web && yarn start",
+    "start:electron": "cd packages/electron && yarn start",
+    "start:packages": "lerna run start --stream --ignore @packages/web --ignore @packages/electron"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/webpack-dev-server",
+      "**/webpack-dev-server/**"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-react": "7.0.0",
+    "babel-eslint": "10.0.1",
+    "cross-env": "^5.2.0",
+    "lerna": "^2.11.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "4.29.6"
+  }
+}

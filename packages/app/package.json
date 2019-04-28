@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "@packages/app",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src --out-dir lib --copy-files",
+    "start": "babel src --out-dir lib --copy-files --watch"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  }
+}
