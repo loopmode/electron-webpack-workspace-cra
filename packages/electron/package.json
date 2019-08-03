@@ -1,5 +1,6 @@
 {
-  "name": "@packages/electron",
+  "private": true,
+  "name": "@app/electron",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,15 +9,24 @@
     "build": "yarn compile && electron-builder",
     "build:dir": "yarn build --dir -c.compression=store -c.mac.identity=null"
   },
+  "_electronWebpack": {
+    "whiteListedModules": [
+      "@local/app"
+    ],
+    "renderer": {
+      "webpackConfig": "webpack.renderer.js"
+    }
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "source-map-support": "^0.5.10"
+    "source-map-support": "^0.5.12"
   },
   "devDependencies": {
-    "electron": "4.0.1",
-    "electron-builder": "20.38.4",
-    "electron-webpack": "^2.6.2",
+    "babel-loader": "8.0.6",
+    "electron": "5.0.6",
+    "electron-builder": "^21.0.11",
+    "electron-webpack": "^2.7.4",
     "electron-webpack-eslint": "^4.0.1"
   }
 }
