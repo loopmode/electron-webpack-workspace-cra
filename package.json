@@ -6,6 +6,7 @@
   "author": "Jovica Aleksic <jovica.aleksic@loopmode.de>",
   "license": "MIT",
   "scripts": {
+    "utils": "lerna run utils --stream",
     "start": "lerna run start --stream",
     "web": "cd packages/web && yarn start",
     "electron": "cd packages/electron && yarn start",

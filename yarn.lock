@@ -1187,6 +1187,15 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
+"@loopmode/electron-webpack-config-yarn-workspaces@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@loopmode/electron-webpack-config-yarn-workspaces/-/electron-webpack-config-yarn-workspaces-0.1.0.tgz#e3ea40e5e2419847862eb2de41c474aaf4800566"
+  integrity sha512-w+tnpCHnP0YYCNSlj+hVx4ZTKpksf/WH1qlHelxjry295eiJfZM0ObGNL3S7kFt9rlU9PlIYHpd79ytScsbLng==
+  dependencies:
+    npm-link-extra "^4.0.0"
+    webpack-merge "^4.2.1"
+    workspaces-utils "^1.1.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -8163,6 +8172,14 @@ npm-bundled@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.6.tgz#e7ba9aadcef962bb61248f91721cd932b3fe6bdd"
   integrity sha512-8/JCaftHwbd//k6y2rEWp6k1wxVfpFzB6t1p825+cUb7Ym2XQfhwIC5KwhrvzZRJu+LtDE585zVaS32+CGtf0g==
 
+npm-link-extra@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/npm-link-extra/-/npm-link-extra-4.0.0.tgz#6c49ec6caef92dcd6fe47851499fe04001d0f6e9"
+  integrity sha512-rIGXGvx7mssGdF2pFPZ5aTGVAxAG0o2D0LJGNWA16HJzrJpGQ7/Doo5gAerFC3KxSonOGtR6WhOr2VFTEefMgA==
+  dependencies:
+    execa "^0.8.0"
+    minimist "^1.2.0"
+
 npm-packlist@^1.1.6:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/npm-packlist/-/npm-packlist-1.4.4.tgz#866224233850ac534b63d1a6e76050092b5d2f44"
@@ -12579,6 +12596,11 @@ worker-rpc@^0.1.0:
   integrity sha512-P1WjMrUB3qgJNI9jfmpZ/htmBEjFh//6l/5y8SD9hg1Ef5zTTVVoRjTrTEzPrNBQvmhMxkoTsjOXN10GWU7aCg==
   dependencies:
     microevent.ts "~0.1.1"
+
+workspaces-utils@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/workspaces-utils/-/workspaces-utils-1.1.2.tgz#55b95138e0ac99e76785ca22e318274e7b2945c3"
+  integrity sha512-uG22pIEvtMnftSXxqxiEBdW/gxmUReFAiEZE9pvK/HqY+RdBB9+izHZQ9J0GVZf9aly5i6ZF5/eJ1OTIopFzvw==
 
 wrap-ansi@^2.0.0:
   version "2.1.0"

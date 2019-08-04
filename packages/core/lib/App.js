@@ -11,7 +11,7 @@ function App() {
     src: logo,
     className: "App-logo",
     alt: "logo"
-  }), React.createElement("p", null, "Watch and transpile ", React.createElement("code", null, "packages/app"), " using", " ", React.createElement("code", null, "yarn watch"), " in the project root."), React.createElement("p", null, "Edit ", React.createElement("code", null, "packages/app/src/App.js"), " and save to reload."), React.createElement("a", {
+  }), React.createElement("p", null, "Watch and transpile ", React.createElement("code", null, "packages/app"), " using", " ", React.createElement("code", null, "yarn watch"), " in the project root!"), React.createElement("p", null, "Edit ", React.createElement("code", null, "packages/app/src/App.js"), " and save to reload."), React.createElement("a", {
     className: "App-link",
     href: "https://reactjs.org",
     target: "_blank",

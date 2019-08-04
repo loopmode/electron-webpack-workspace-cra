@@ -1,12 +1,11 @@
-const glob = require('glob')
 const path = require('path')
-const watchDirs = glob.sync(`../*/lib`).map(dir => path.resolve(__dirname, dir))
+const configureYarnWorkspaces = require('@loopmode/electron-webpack-config-yarn-workspaces')
+console.log(configureYarnWorkspaces)
 module.exports = function(config) {
-  return Object.assign(config, {
-    devServer: {
-      ...config.devServer,
-      contentBase: watchDirs,
-      watchContentBase: true
-    }
+  config = configureYarnWorkspaces(config, {
+    root: path.resolve(__dirname, '../..'),
+    libAlias: 'lib'
   })
+  console.log(config)
+  return config
 }
